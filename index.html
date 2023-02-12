@@ -6,15 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
-</head>
+</head> 
 <body>
 
-    <!-- JS -->
-    <script src="./js/main.jsgit"></script>
+    <section class="container py-5">
+
+    <h2>Tính tiền lương nhân viên</h2>
+    <form class="w-50">
+        <div class="form-group">
+            <label for=""> Lương 1 ngày</label>
+            <input type="number" class="form-control" id="Luong1Ngay" value="100.000">
+        </div>
+        <div class="form-group">
+            <label for="">Số ngày làm</label>
+            <input type="number" class="form-control" id="SoNgayLam">
+        </div>
+        <button id="btnLuong" type="button" class="btn btn-primary">Tính lương</button>
+        <p id="txtLuongNhanVien" class="alert alert-success"></p>
+    </form>
+
+    <h2>Tính giá trị trung bình</h2>
+    <form>
+        <div class="form-group">
+            <input type="number" class="form-control" id="so1" placeholder="Nhập số thứ 1">
+        </div>
+        <div class="form-group">
+
+            <input type="number" class="form-control" id="so2" placeholder="Nhập số thứ 2">
+        </div>
+        <div class="form-group">
+
+            <input type="number" class="form-control" id="so3" placeholder="Nhập số thứ 3">
+        </div>
+        <div class="form-group">
+
+            <input type="number" class="form-control" id="so4" placeholder="Nhập số thứ 4">
+        </div>
+        <div class="form-group">
+
+            <input type="number" class="form-control" id="so5" placeholder="Nhập số thứ 5">
+        </div>
+
+        <button  type="button" id="btnTinhTB" class="btn btn-info">Tính trung bình</button>
+        <p id="txtTinhTB" class="alert alert-info"></p>
+    </form>
+    
+    <h2> Quy đổi tiền </h2>
+    <form action="">
+        <div class="form-group">
+            <input type="number" class="form-control" id="tienUSD" placeholder="Nhập số tiền USD">
+        </div>
+
+        <button onclick="quyDoiTien()" type="button" id="btnQuyDoi" class="btn btn-dark">Quy đổi tiền</button>
+        <p id="txtQuyDoi" class="alert alert-secondary"></p>
+    </form>
+
+    <h2> Tính diện tích, chu vi hình chữ nhật </h2>
+    <form action="">
+        <div class="form-group">
+            <input type="number" class="form-control" id="ChieuDai" placeholder="Nhập chiều dài">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" id="ChieuRong" placeholder="Nhập chiều rộng">
+        </div>
+
+        <button type="button" id="btnTinhKetQua" class="btn btn-dark">Tính </button>
+        <p id="txtTinhKetQua" class="alert alert-success"></p>
+        
+    </form>
+
+    <form action="">
+        <div class="form-group">
+            <input type="number" class="form-control" id="NhapSo" placeholder="Nhập số có 2 chữ số">
+        </div>
+
+        <button onclick="tinh2KySo()" type="button" id="btnTinhTong" class="btn btn-light">Tính tổng </button>
+        <p id="txtTinhTong" class="alert alert-success"></p>
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+ <!-- Bootstrap4 JS    -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+crossorigin="anonymous"></script>
+
+
+    <!--Main JS -->
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
